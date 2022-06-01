@@ -84,8 +84,7 @@ namespace Crawl // Note: actual namespace depends on the project name.
             }
             string path = "D:\\Crawl_15.txt";
             ExportData(listProducts, path);
-            foreach(var product in listProducts)
-                product.printProduct(product);
+
             Console.WriteLine("CHUC MUNG LINH DA XONG DEADLINE");
 
         }
