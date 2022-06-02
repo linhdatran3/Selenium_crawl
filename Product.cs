@@ -8,7 +8,7 @@ namespace Crawl
 {
     public class Product
     {
-        string ID { get; set; }
+       
         public string Name { get; set; }
         public string Description { get; set; }
         //bool IsAvailable { get; set; }
@@ -19,10 +19,14 @@ namespace Crawl
 
         public void printProduct(Product pro)
         {
-            Console.WriteLine(pro.ID);
+            
             Console.WriteLine(pro.Name);
             Console.WriteLine(pro.Description);
             Console.WriteLine(pro.Price);
+            foreach (var image in pro.Images)
+            {
+                Console.WriteLine(image);
+            }
         }
 
     }
